@@ -1,0 +1,41 @@
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  color: black;
+  padding: 2rem 5rem;
+  display: inline-block;
+  background-color: aliceblue;
+  margin-top: 10rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2b8a3e;
+  transition: all 0.2s;
+  animation-name: moveDownToUP;
+  animation-duration: 1s;
+  border: none;
+}
+
+@keyframes moveDownToUP {
+  0% {
+    transform: translateY(200px) scale(1.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.btn:hover {
+  transform: translateY(-5px) scale(1.2);
+  letter-spacing: 0.5rem;
+  box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.8);
+}
+
+.btn:active {
+  transform: translateY(-3px) scale(0.8);
+  color: #2b8a3e;
+  box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.8);
+}
